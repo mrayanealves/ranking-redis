@@ -16,14 +16,8 @@ router.use(bodyParser.json())
  */
 router.post('/', service.saveNewPlayer);
 
-// router.put('/', );
+router.post('/add/scores', service.updateScorePlayer);
 
-// router.post('/add/points', function(req, res) {
-
-// });
-
-// router.post('/remove/points', function(req, res) {
-
-// });
+router.post('/remove/scores', service.removeScorePlayer);
 
 module.exports = router

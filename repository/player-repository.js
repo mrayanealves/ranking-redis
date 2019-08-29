@@ -7,7 +7,15 @@ exports.saveNewPlayer = function(sortser, userscore, username, callback){
 }
 
 exports.updateScorePlayer = function(sortset, incrementscore, username, callback){
-    redis.zincrby(sortset, incrementscore, username, (err, reply) => {
+    redis.zincrby(sortset, incrementscore, username, (err) => {
         callback(err)
     });
+}
+
+exports.findScoreUsername = function(sortset, username, callback){
+    redis.zscore(sortset, username, (err, data) => {
+        return callback(err, data)
+    });
+
+    
 }
