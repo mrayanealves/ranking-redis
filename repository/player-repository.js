@@ -16,6 +16,4 @@ exports.findScoreUsername = function(sortset, username, callback){
     redis.zscore(sortset, username, (err, data) => {
         callback(err, data)
     });
-
-    
 }

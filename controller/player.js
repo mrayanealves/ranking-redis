@@ -7,17 +7,19 @@ var service = require('../service/player-service')
 router.use(bodyParser.urlencoded({ extended: true }))
 router.use(bodyParser.json())
 
-// router.get('/', function(req, res) {
-
-// });
-
 /**
  *  Saves a new player with score equals 0
  */
 router.post('/', service.saveNewPlayer);
 
+/**
+ * Adds the value of scores of a player existents
+ */
 router.post('/add/scores', service.updateScorePlayer);
 
+/**
+ * Removes the value of scores of a player existents
+ */
 router.post('/remove/scores', service.removeScorePlayer);
 
 module.exports = router
