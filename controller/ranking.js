@@ -10,7 +10,7 @@ router.use(bodyParser.json())
 /**
  *  Returns all ranking
  */
-// router.get('/', service.);
+router.get('/', service.findAllRanking);
 
 /**
  * Returns top 10 of ranking
