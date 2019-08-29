@@ -38,8 +38,16 @@ exports.updateScorePlayer = (req, res) => {
             res.status(500);
         }
 
-        res.status(200).jsonp({'username': username, 
-                               'score': score}); 
+        repository.findScoreUsername(sortset, username, (err, data) => {
+            if(err){
+                res.status(500)
+            } else {
+                score = data
+
+                res.status(200).jsonp({'username': username, 
+                               'score': parseInt(score, 10)}); 
+            }
+        })
     });
 }
 
