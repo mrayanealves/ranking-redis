@@ -15,7 +15,7 @@ router.get('/', service.findAllRanking);
 /**
  * Returns top 10 of ranking
  */
-// router.get('/tops', service.);
+router.get('/tops', service.findTopRanking);
 
 /**
  * Returns the last player of ranking

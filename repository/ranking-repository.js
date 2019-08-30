@@ -5,3 +5,9 @@ exports.findAllRanking = function(sortset, callback){
         callback(err, data)
     });
 }
+
+exports.findTopRanking = function(sortset, callback){
+    redis.zrange(sortset, 0, 9, 'withscores', (err, data) => {
+        callback(err, data)
+    });
+}
