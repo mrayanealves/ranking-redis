@@ -20,6 +20,6 @@ router.get('/tops', service.findTopRanking);
 /**
  * Returns the last player of ranking
  */
-router.get('/players/last', service.findLastPlayerOfRanking);
+router.get('/player/last', service.findLastPlayerOfRanking);
 
 module.exports = router
