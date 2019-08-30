@@ -13,12 +13,12 @@ router.use(bodyParser.json())
 router.post('/', service.saveNewPlayer);
 
 /**
- * Adds the value of scores of a player existents
+ * Adds a value to a player's scores 
  */
 router.post('/add/scores', service.updateScorePlayer);
 
 /**
- * Removes the value of scores of a player existents
+ * Removes a value to a player's scores 
  */
 router.post('/remove/scores', service.removeScorePlayer);
 

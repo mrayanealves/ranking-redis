@@ -1,5 +1,8 @@
 var repository = require('../repository/ranking-repository')
 
+/**
+ * This method return all players of ranking
+ */
 exports.findAllRanking = (req, res) => {
     sortset = 'ranking:player';
 
@@ -27,6 +30,9 @@ exports.findAllRanking = (req, res) => {
     });
 }
 
+/**
+ * This method return the firts ten players of ranking
+ */
 exports.findTopRanking = (req, res) => {
     sortset = 'ranking:player';
 
@@ -54,6 +60,9 @@ exports.findTopRanking = (req, res) => {
     });
 }
 
+/**
+ * This method return the last player in the ranking
+ */
 exports.findLastPlayerOfRanking = (req, res) => {
     sortset = 'ranking:player';
 

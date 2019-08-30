@@ -1,5 +1,8 @@
 var repository = require('../repository/player-repository')
 
+/**
+ * This method saves a new player
+ */
 exports.saveNewPlayer = (req, res) => {
     sortset = 'ranking:player';
 
@@ -20,6 +23,9 @@ exports.saveNewPlayer = (req, res) => {
     });
 }
 
+/**
+ * This method adds a value to a player's score
+ */
 exports.updateScorePlayer = (req, res) => {
     sortset = 'ranking:player';
 
@@ -51,6 +57,9 @@ exports.updateScorePlayer = (req, res) => {
     });
 }
 
+/**
+ * This method removes a value to a player's score
+ */
 exports.removeScorePlayer = (req, res) => {
     sortset = 'ranking:player';
 
