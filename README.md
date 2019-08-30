@@ -49,6 +49,6 @@ Para facilitar a execussão, disponibilizei uma documentação com as rotas do s
 
 ### Informes finais
 
-Eu tentei documentar os métodos de forma que fiquei o mais claro possível do que ele trata. Os repositorys também possuiem uma breve explicação do que são os métodos do Redis que estão sendo usados. 
+Eu tentei documentar os métodos de forma que ficassem o mais claro possível do que ele trata. Os repositorys também possuem uma breve explicação do que são os métodos do Redis que estão sendo usados. 
 
 Obs.: Perdoem caso o inglês esteja ruim (haha).
