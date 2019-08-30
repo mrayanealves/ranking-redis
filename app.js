@@ -6,8 +6,7 @@ var index = require('./controller/index')
 var playing = require('./controller/player');
 var ranking = require('./controller/ranking')
 
-app.listen(port, () => console.log(`Example app listening on port $
-{port}!`))
+app.listen(port, () => console.log(`App listening on port ${port}!`))
 
 app.use('/', index)
 
