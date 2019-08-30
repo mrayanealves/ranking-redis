@@ -53,3 +53,25 @@ exports.findTopRanking = (req, res) => {
         }
     });
 }
+
+exports.findLastPlayerOfRanking = (req, res) => {
+    sortset = 'ranking:player';
+
+    repository.findTopRanking(sortset, (err, data) => {
+        if(err) {
+            res.status(500);
+        } else {
+            result = data;
+
+            numberofranking = result.length/2;
+
+            lastplayerofranking = {
+                "position" : numberofranking,
+                "player": result[0],
+                "score": result[1]
+            }
+
+            res.status(200).jsonp(lastplayerofranking);
+        }
+    });
+}
