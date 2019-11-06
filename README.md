@@ -2,7 +2,7 @@
 
 Um sistema de rankeamento usando Redis.
 
-### Pre requisitos
+### Tecnologias
 
 1. [NodeJS](https://nodejs.org/en/download/)
 2. [Redis](https://redis.io/download)
